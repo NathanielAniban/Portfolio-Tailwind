@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="icon" href="https://athleticmma.online//public/Images/icon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/fe5818cd00.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="Home">
+  <nav class="block fixed w-full bg-gray-900 sm:bg-gray-800 z-40 border-2 border-gray-900 p-2 md:p-2">
+    <div class="container mx-auto flex flex-wrap justify-between items-center">
+      <a href="#Home" class="text-white text-2xl font-bold italic">My Portfolio</a>
+      <div class="sm:hidden">
+        <button id="toggle-button"
+          class="space-y-2 focus:outline-none hover:bg-gray-900 py-2 focus:shadow-outline px-2 py-1 rounded">
+          <span class="block h-1 w-8 bg-white"></span>
+          <span class="block h-1 w-8 bg-white"></span>
+          <span class="block h-1 w-8 bg-white"></span>
+        </button>
+      </div>
+      <ul id="navigation-menu"
+        class="block relative font-semibold bg-gray-700 border-2 sm:border-0 border-white w-full p-2 my-2 rounded hidden
+      sm:flex sm:flex-between sm:static sm:order-last text-white text-lg sm:w-auto sm:p-0 sm:bg-transparent sm:transform-none">
+        <li class="grid hover:bg-gray-900 rounded"><a href="#Home" class="text-white p-2 grid-col-12">Home</a></li>
+        <li class="grid hover:bg-gray-900 rounded"><a href="#About" class="text-white p-2 grid-col-12">About</a></li>
+        <li class="grid hover:bg-gray-900 rounded"><a href="#Services" class="text-white p-2 grid-col-12">Services</a>
+        </li>
+        <li class="grid hover:bg-gray-900 rounded"><a href="#Contact" class="text-white p-2 grid-col-12">Contact</a>
+        </li>
+        <li class="grid hover:bg-gray-900 rounded border border-gray-400"><a href="https://nathanielaniban.github.io/Portfolio" target="_blank" class="text-white p-2 grid-col-12">My Github Portfolio</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Header -->
+  <header class="grid md:grid-cols-2 xl:pt-10 pt-5 bg-gray-200 lg:h-screen">
+    <div class="block content-center bg-gray-200 px-5 py-5 sm:p-10">
+      <div class="block bg-gray-200 px-5 py-5 sm:p-10">
+        <div class="container mx-auto">
+          <p class="text-lg mb-2 text-center sm:text-start">Welcome to my Portfolio</p>
+          <h1 class="lg:text-5xl sm:text-3xl text-xl text-center sm:text-start font-bold mb-3">Hi, I'm <span
+              class="text-cyan-800 underline decoration-sky-500 italic">Nathaniel Aniban</span></h1>
+          <h1 class="lg:text-4xl sm:text-2xl text-lg font-bold mb-3 text-white text-center sm:text-start italic"
+            style="text-shadow: 1px 1px 2px black;">Full Stack Developer</h1>
+          <p class="text-lg text-center sm:text-start">I am a passionate developer with a knack for creating innovative
+            solutions. Explore my work
+            and get to know me better.</p>
+        </div>
+        <div class="container grid xl:grid-cols-2 mx-auto mb-5 gap-3">
+          <a href="#Contact"
+            class="bg-cyan-800 text-white text-center py-3 px-5 rounded mt-4 sm:mt-5 hover:bg-cyan-700">Hire Me</a>
+          <a href="assets/files/Resume.pdf" target="_blank"
+            class="bg-blue-800 text-white text-center py-3 px-5 rounded mt-4 sm:mt-5 hover:bg-blue-700">Download CV</a>
+        </div>
+      </div>
+      <div class="relative flex xl:top-40 xl:bottom-40 bg-gray-200">
+        <div class="bg-gray-200 p-5 pr-40 rounded-lg shadow-md w-full xl:w-auto">
+          <p class="text-xl font-semibold mb-2 italic">Socials</p>
+          <ul class="flex gap-5">
+            <li class="text-2xl hover:text-gray-900 transition hover:scale-105 duration-300">
+              <a href="https://www.facebook.com/Aniban.Nathaniel" target="_blank" aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li class="text-2xl hover:text-gray-900 transition hover:scale-105 duration-300">
+              <a href="https://www.instagram.com/urmirr0r_/" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li class="text-2xl hover:text-gray-900 transition hover:scale-105 duration-300">
+              <a href="https://www.linkedin.com/in/nathaniel-aniban-48643a287/?originalSubdomain=ph" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="text-2xl hover:text-gray-900 transition hover:scale-105 duration-300">
+              <a href="https://github.com/NathanielAniban" target="_blank" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center order-first md:order-last items-center bg-gray-800 md:p-4 
+    hover:bg-gray-900 delay-75 duration-300 ease-in-out">
+      <img src="assets/images/formal-image.png" alt="Website" id="image-href"
+        class="object-fill w-80 xl:w-auto md:object-cover m-12 rounded-full bg-gray-900 shadow-lg
+        hover:shadow-2xl xl:hover:scale-102 cursor-pointer transition duration-300 ease-in-out transform xl:hover:rotate-12 hover:bg-gray-800">
+    </div>
+  </header>
+  <!-- About -->
+  <section class="pt-10 xl:pt-20 md:pt-1/3 pb-10 h-full bg-gray-100" id="About">
+    <div class="container mx-auto">
+      <h1
+        class="text-2xl font-bold sm:text-3xl text-center md:text-start md:ml-10 text-cyan-800 pt-10 underline decoration-sky-500">
+        About Me</h1>
+      <div class="grid sm:grid-cols-2 gap-2 p-5" id="About-Me">
+        <div class="block p-5 bg-gray-200 rounded shadow-lg">
+          <h1 class="text-xl sm:text-3xl font-bold">Who am I?</h1>
+          <p class="text-lg">I am a Full Stack Developer with a passion for creating innovative solutions. I have a
+            strong
+            foundation in programming and problem-solving. I am a quick learner and I am always eager to learn new
+            technologies.</p>
+        </div>
+        <div class="block p-5 bg-gray-200 rounded shadow-lg">
+          <h1 class="text-xl sm:text-3xl font-bold">What do I do?</h1>
+          <p class="text-lg">I specialize in creating web applications and websites. I have experience in both front-end
+            and back-end development. I am proficient in HTML, CSS, JavaScript, PHP, and MySQL. I am also familiar with
+            C++ and Java.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container mx-auto ">
+      <h1
+        class="text-xl sm:text-3xl font-bold text-center md:text-start md:ml-10 text-cyan-800 underline decoration-sky-500">
+        Specialized
+        Skills</h1>
+      <div class="grid sm:grid-cols-3 gap-2 p-5" id="Skills">
+        <div class="block p-5 bg-gray-200 rounded shadow-lg">
+          <h1 class="text-xl font-bold">Front-End Development</h1>
+          <p class="text-lg">I specialize in creating user-friendly and responsive websites. I have experience in HTML,
+            CSS, and JavaScript. I am also familiar with popular front-end frameworks such as Bootstrap and Tailwind
+            CSS.</p>
+        </div>
+        <div class="block p-5 bg-gray-200 rounded shadow-lg">
+          <h1 class="text-xl font-bold">Back-End Development</h1>
+          <p class="text-lg">I specialize in creating dynamic and interactive web applications. I have experience in PHP
+            and MySQL. I am also familiar with popular back-end frameworks such as Laravel and CodeIgniter.</p>
+        </div>
+        <div class="block p-5 bg-gray-200 rounded shadow-lg">
+          <h1 class="text-xl font-bold">Problem-Solving</h1>
+          <p class="text-lg">I specialize in solving complex problems and creating innovative solutions. I have a strong
+            foundation in programming and problem-solving. I am a quick learner and I am always eager to learn new
+            technologies.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container mx-auto">
+      <h1
+        class="text-xl sm:text-3xl font-bold text-center md:text-start md:ml-10 text-cyan-800 underline decoration-sky-500">
+        Most used
+        framework & libraries</h1>
+      <div class="grid sm:grid-cols-3 gap-2 p-5" id="frameworks-libraries">
+        <div class="block p-5 bg-gray-200 rounded shadow-lg">
+          <h1 class="text-xl font-bold">Codeigniter</h1>
+          <p class="text-lg">It is a PHP framework that helps developers create web applications. It's a full-stack
+            framework that's designed to be fast, secure, and flexible.</p>
+        </div>
+        <div class="block p-5 bg-gray-200 rounded shadow-lg">
+          <h1 class="text-xl font-bold">JQuery</h1>
+          <p class="text-lg">jQuery is a fast, small, cross-platform and feature-rich JavaScript library. It is designed
+            to simplify the client-side scripting of HTML.</p>
+        </div>
+        <div class="block p-5 bg-gray-200 rounded shadow-lg">
+          <h1 class="text-xl font-bold">Bootstrap</h1>
+          <p class="text-lg">Bootstrap is a free, open source front-end development framework for the creation of
+            websites and web apps. Designed to enable responsive development of mobile-first websites, Bootstrap
+            provides a collection of syntax for template designs.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Services -->
+  <section class="pt-10 lg:pt-20 md:pt-1/3 pb-10 h-full bg-gray-100" id="Services">
+    <div class="container mx-auto">
+      <h1 class="text-2xl sm:text-3xl font-bold text-center text-cyan-800 underline pt-10 lg:pt-5 decoration-sky-500">
+        Services</h1>
+      <div class="grid sm:grid-cols-3 gap-2 p-5" id="Services-Grid">
+        <div class="block p-5 bg-gray-200 rounded shadow-lg">
+          <h1 class="text-xl font-bold">Web Development</h1>
+          <p class="text-lg">I specialize in creating user-friendly and responsive websites. I have experience in HTML,
+            CSS, and JavaScript. I am also familiar with popular front-end frameworks such as Bootstrap and Tailwind
+            CSS.</p>
+        </div>
+        <div class="block p-5 bg-gray-200 rounded shadow-lg">
+          <h1 class="text-xl font-bold">Web Design</h1>
+          <p class="text-lg">I specialize in creating visually appealing and user-friendly websites. I have experience
+            in
+            creating custom designs and layouts. I am also familiar with popular design tools such as Adobe Photoshop
+            and Adobe XD.</p>
+        </div>
+        <div class="block p-5 bg-gray-200 rounded shadow-lg">
+          <h1 class="text-xl font-bold">Web Maintenance</h1>
+          <p class="text-lg">I specialize in maintaining and updating websites. I have experience in fixing bugs,
+            updating content, and optimizing performance. I am also familiar with popular maintenance tools such as
+            Git and GitHub.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container mx-auto">
+      <h1 class="text-2xl sm:text-3xl  font-bold text-center text-cyan-800 underline decoration-sky-500">Non - Related
+        Services</h1>
+      <div class="grid sm:grid-cols-2 gap-2 p-5" id="Non-Related-Services">
+        <div class="block p-5 bg-gray-200 rounded shadow-lg">
+          <h1 class="text-xl font-bold">Physical Trainer</h1>
+          <p class="text-lg">I offer personal training services to help you achieve your fitness goals.
+            Whether you're looking to improve strength, endurance, flexibility, or overall health, I create personalized
+            workout plans tailored to your needs. I provide guidance on proper technique, injury prevention, and
+            offer motivation every step of the way. Let’s work together to reach your fitness potential!</p>
+        </div>
+        <div class="block p-5 bg-gray-200 rounded shadow-lg">
+          <h1 class="text-xl font-bold">Tutor</h1>
+          <p class="text-lg"> offer personalized tutoring services to help you succeed academically. Whether you need
+            support in a specific subject, assistance with homework, or preparation for exams, I provide tailored
+            lessons designed to boost your understanding and confidence. Let’s work together to achieve your academic
+            goals!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="md:pt-1/3 pb-10 pt-10 lg:pt-20 h-full bg-gray-100" id="Contact">
+    <div class="mx-auto pt-5 px-5">
+      <h1 class="text-2xl sm:text-4xl font-bold text-center pt-10 italic mb-3">Message Me</h1>
+      <p class="text-center mb-3">Have a question or want to work together? Feel free to send me a message.
+      </p>
+    </div>
+    <div class="container p-5 grid xl:grid-cols-2 gap-2 mx-auto h-full">
+      <div class="container bg-gray-100 h-full pb-10 md:pt-1/3 pb-10">
+        <h1 class="text-2xl sm:text-4xl font-bold text-center italic">Contact Form</h1>
+        <p class="text-center">Please fill out the form below and I will get back to you as soon as possible.</p>
+        <form action="#" class="p-10">
+          <div class="gap-2">
+            <div class="grid gap-2 mb-2">
+              <label for="Name" class="text-lg font-bold italic">Name&nbsp;<span class="text-red-500">*</span></label>
+              <input type="text" id="Name" placeholder="Name" class="p-2 rounded border border-gray-900" disabled required>
+            </div>
+            <div class="grid gap-2 mb-2">
+              <label for="Email" class="text-lg font-bold italic">Email&nbsp;<span class="text-red-500">*</span></label>
+              <input type="email" id="Email" placeholder="Email" class="p-2 rounded border border-gray-900" disabled required>
+            </div>
+            <div class="grid gap-2 mb-2">
+              <label for="Message" class="text-lg font-bold italic">Message&nbsp;<span
+                  class="text-red-500">*</span></label>
+              <textarea name="message" id="Message" cols="30" rows="5" placeholder="Message"
+                class="p-2 rounded border border-gray-900" disabled required></textarea>
+            </div>
+            <button type="submit"
+              class="bg-cyan-800 text-white text-center py-3 px-10 rounded mt-4 sm:mt-5 hover:bg-cyan-700 w-full sm:w-auto" disabled>Submit</button>
+          </div>
+        <p class="text-center sm:text-start text-sm text-gray-600 py-2">Note: The contact form on this page is currently not functional. 
+        We are working to fix this issue as soon as possible. 
+        In the meantime, please use an alternative method to reach out to us.
+        Thank you for your understanding and patience.</p>
+        </form>
+      </div>
+      <div class="container bg-gray-100 h-full pb-10 md:pt-1/3 pb-10">
+        <div class="mx-auto px-5">
+          <h1 class="text-2xl sm:text-4xl font-bold text-center italic">Contact Details</h1>
+          <p class="text-center">Feel free to contact me using the information below.</p>
+        </div>
+        <div class="grid gap-2 p-5 text-center sm:text-start">
+          <div class="grid gap-2 mb-3">
+            <label for="Email" class="text-lg font-bold italic">Email</label>
+            <p class="text-lg">
+              <a href="mailto:nathanielaniban1@gmail.com" class="text-cyan-800 underline decoration-sky-500">nathanielaniban1@gmail.com</a>
+            </p>
+          </div>
+          <div class="grid gap-2 mb-3">
+            <label for="Phone" class="text-lg font-bold italic">Mobile Number</label>
+            <p class="text-lg">
+              <a href="tel:" class="text-cyan-800 underline decoration-sky-500">+63 905 916 3323</a>
+            </p>
+          </div>
+          <div class="grid gap-2 mb-3">
+            <label for="Address" class="text-lg font-bold italic">Address</label>
+            <p class="text-lg">Taytay Rizal, Philippines</p>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5305.883511683138!2d121.1315165578076!3d14.555536308132512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c6b9f09671d5%3A0xbd0e296db5bef71e!2sTaytay%20Tiangge!5e0!3m2!1sen!2sph!4v1736585616180!5m2!1sen!2sph"
+            width="600" height="300" class="container border border-black rounded" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
+
+<script>
+  //Smooth Scroll
+  document.querySelector('html').style.scrollBehavior = 'smooth';
+
+  //Skills -> Children Hoverable
+  function hoverableChildren(id) {
+    const skills = document.querySelector(id);
+    const children = skills.children;
+    for (let i = 0; i < children.length; i++) {
+      children[i].classList.add('hover:transition', 'hover:duration-800', 'hover:ease-in-out', 'border', 'border-black', 'transform', 'hover:scale-105', 'hover:shadow-lg', 'hover:bg-gray-300', 'hover:shadow-2xl');
+    }
+  }
+  hoverableChildren('#Skills');
+  hoverableChildren('#frameworks-libraries');
+  hoverableChildren('#About-Me');
+  hoverableChildren('#Services-Grid');
+  hoverableChildren('#Non-Related-Services');
+
+  //Toggle Button
+  const button = document.querySelector('#toggle-button');
+  const ul = document.querySelector('#navigation-menu');
+  button.addEventListener('click', () => {
+    ul.classList.toggle('hidden');
+  });
+
+  //Image -> About
+  const image = document.querySelector('#image-href');
+  image.addEventListener('click', () => {
+    window.location.href = '#About';
+  });
+</script>
