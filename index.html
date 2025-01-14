@@ -24,7 +24,7 @@
       </div>
       <ul id="navigation-menu"
         class="block relative font-semibold bg-gray-700 border-2 sm:border-0 border-white w-full p-2 my-2 rounded hidden
-      sm:flex sm:flex-between sm:static sm:order-last text-white text-lg sm:w-auto sm:p-0 sm:bg-transparent sm:transform-none">
+      sm:flex sm:flex-between sm:static gap-2 sm:order-last text-white text-lg sm:w-auto sm:p-0 sm:bg-transparent sm:transform-none">
         <li class="grid hover:bg-gray-900 rounded"><a href="#Home" class="text-white p-2 grid-col-12">Home</a></li>
         <li class="grid hover:bg-gray-900 rounded"><a href="#About" class="text-white p-2 grid-col-12">About</a></li>
         <li class="grid hover:bg-gray-900 rounded"><a href="#Services" class="text-white p-2 grid-col-12">Services</a>
@@ -285,38 +285,7 @@
     </div>
   </section>
 
+  <script src="components/utility-handler.js"></script>
 </body>
-
 </html>
 
-<script>
-  //Smooth Scroll
-  document.querySelector('html').style.scrollBehavior = 'smooth';
-
-  //Skills -> Children Hoverable
-  function hoverableChildren(id) {
-    const skills = document.querySelector(id);
-    const children = skills.children;
-    for (let i = 0; i < children.length; i++) {
-      children[i].classList.add('hover:transition', 'hover:duration-800', 'hover:ease-in-out', 'border', 'border-black', 'transform', 'hover:scale-105', 'hover:shadow-lg', 'hover:bg-gray-300', 'hover:shadow-2xl');
-    }
-  }
-  hoverableChildren('#Skills');
-  hoverableChildren('#frameworks-libraries');
-  hoverableChildren('#About-Me');
-  hoverableChildren('#Services-Grid');
-  hoverableChildren('#Non-Related-Services');
-
-  //Toggle Button
-  const button = document.querySelector('#toggle-button');
-  const ul = document.querySelector('#navigation-menu');
-  button.addEventListener('click', () => {
-    ul.classList.toggle('hidden');
-  });
-
-  //Image -> About
-  const image = document.querySelector('#image-href');
-  image.addEventListener('click', () => {
-    window.location.href = '#About';
-  });
-</script>
